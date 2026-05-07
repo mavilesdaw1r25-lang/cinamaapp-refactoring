@@ -1,10 +1,16 @@
-public class ProjectorCinema implements ServeiReproductor {
-public void reproduir() { System.out.println("Projector: reproduint"); }
-public void aturar() { System.out.println("Projector: aturat"); }
-public void ajustarVolum(int nivell) { System.out.println("So de sala: volum " + nivell); }
-public void activarSubtitols(String i) { System.out.println("Projecció: subtítols " + i); }
-public void enviarAlTelevisio() { throw new UnsupportedOperationException("Projector ≠
-Chromecast"); }
-public void descarregarFitxer() { throw new UnsupportedOperationException("Projector
-no descarrega"); }
-}
+package cinema;
+
+public class ProjectorCinema implements ReproductorBasic, ServeiSubtitols {
+    @Override
+    public void reproduir() { /* Lògica de reproducció */ }
+
+    @Override
+    public void aturar() { /* Aturar projector */ }
+
+    @Override
+    public void ajustarVolum(int nivell) { /* Ajustar volum */ }
+
+    @Override
+    public void activarSubtitols(String idioma) { /* Mostrar subtítols */ }
+    
+  
