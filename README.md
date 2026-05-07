@@ -1,1 +1,1 @@
-# cinamaapp-refactoring
+Arquitectura MVC en 3 capes: Model (Dades), Vista (Presentació), Controlador (Negoci)
